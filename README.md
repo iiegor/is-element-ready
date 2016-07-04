@@ -14,5 +14,8 @@ isElementReady('#hello').then(function(element) {
 
 ### isElementReady(selector[, target])
 
+- selector - *String*
+- target - *Node*
+
 ## License
 MIT © [Iegor Azuaga](https://github.com/iiegor)
