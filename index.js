@@ -16,7 +16,9 @@ module.exports = function(selector, target) {
       var element = document.querySelector(selector);
       
       if (element) {
-        resolve(element)
+        target.removeEventListener('DOMNodeInserted', this, false);
+        
+        resolve(element);
       }
     }, false);
   });
